@@ -10,11 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     @Value("${spring.application.name}")
     private String appName;
-//   @RequestMapping("/")
-//    public String index() {
-//        System.out.println("App name: " + appName);
-//        return "index.html";
-//    }
     @RequestMapping("/")
     public String index(Model model) {
        model.addAttribute("nombre", appName);
