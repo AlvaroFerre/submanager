@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<!--<head>-->
+<!--    <title layout:fragment="title">Inicio</title>-->
+<!--</head>-->
+
+<body>
+
+<main layout:fragment="content">
+
+    <h1>Bienvenido a <span th:text="${nombre}"></span></h1>
+
+    <p>Esta es la página de inicio.</p>
+
+</main>
+
+</body>
+</html>
